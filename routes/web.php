@@ -15,3 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/sneakers', [SneakerController::class, "index"])->name("sneaker-index");
+Route::get('/sneakers/create', [SneakerController::class, "create"])->name("sneaker-create");
+Route::get('/sneakers/{id}', [SneakerController::class, "show"])->name("sneaker-show");
+Route::post('/sneakers', [SneakerController::class, "store"])->name("sneaker-store");
