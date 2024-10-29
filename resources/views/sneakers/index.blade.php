@@ -39,7 +39,7 @@
                         </div>
                     </li>
                     @empty
-                    <h1>There are not sneakers in your collection yet!</h1>
+                    <h1>There are not sneakers in your collection yet! </h1>
                     @endforelse
                 </ul>
             </div>
