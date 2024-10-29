@@ -1,5 +1,5 @@
 <div class="container">
     <header>
-        <h1>header</h1>
+        <h1 class="text-center">DB-SNEAKERS</h1>
     </header>
 </div>
