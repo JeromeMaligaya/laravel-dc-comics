@@ -22,7 +22,7 @@ class SneakerController extends Controller
      */
     public function create()
     {
-        //
+        return view('sneakers.create');
     }
 
     /**
