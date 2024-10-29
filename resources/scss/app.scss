@@ -21,3 +21,12 @@ img {
     display: block;
     max-width: 100%;
 }
+
+#sneaker-card {
+    height: 375px;
+    overflow: hidden;
+
+    .img-box {
+        height: 300px;
+    }
+}
