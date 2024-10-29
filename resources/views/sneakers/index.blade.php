@@ -13,7 +13,7 @@
                     <li class="col-4 g-3">
                         <div id="sneaker-card" class="card py-4">
                             <div class="img-box">
-                                <img src="{{ $sneaker->img_url}}" class="card-img-top img-fluid" alt="...">
+                                <img src="{{ $sneaker->img_url}}" class="card-img-top img-fluid" alt="{{ $sneaker->id}}">
                             </div>
                             <div class="card-body">
                               <h5 class="card-title">{{ $sneaker->brand }}</h5>
@@ -27,11 +27,10 @@
                               <p class="card-text">
                                 Actual market price &euro;{{ $sneaker->actual_price}}
                               </p>
-
                             </div>
                         </div>
                         <div class="d-flex justify-content-center py-3">
-                            <a href="#" class="btn btn-primary">Show more</a>
+                            <a href="{{ route('sneaker-show', ['id' => $sneaker->id]) }}" class="btn btn-primary">Show more</a>
                         </div>
                     </li>
                     @empty
