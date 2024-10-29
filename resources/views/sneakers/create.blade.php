@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('page-title', 'sneaker create')
+
 @section('content')
 <main>
     <section class="container my-4" id="form">
@@ -39,6 +41,7 @@
 
                     <button type="submit" class="btn btn-primary">Submit</button>
                     <button type="reset" class="btn btn-warning">Reset</button>
+                    <a href="{{ route('sneaker-index') }}" class="btn btn-success">Back to home</a>
                 </form>
             </div>
         </div>
