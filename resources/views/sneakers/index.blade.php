@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('page-title', 'sneaker index')
+
 @section('content')
 <main>
     <div class="container">

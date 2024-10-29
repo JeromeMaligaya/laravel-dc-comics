@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('page-title', 'Sneaker Show ' . $sneaker->id)
+
 @section('content')
 <main>
     <section id="sneaker-item">
