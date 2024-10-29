@@ -7,8 +7,8 @@
             <div class="col-12">
                 <h1 class="text-center">My sneakers collection</h1>
             </div>
-            <div class="col-12">
-                <a href="{{ route('sneaker-create') }}" class="btn btn-primary">Adde a new Sneaker in your collection</a>
+            <div class="col-12 text-center my-3">
+                <a href="{{ route('sneaker-create') }}" class="btn btn-primary">Add a New Sneaker in your collection!</a>
             </div>
             <div class="col-10">
                 <ul class="row">
