@@ -20,7 +20,7 @@ class SneakerSeeder extends Seeder
             'year_release' => 2022,
             'retail_price' => 179.00,
             'actual_price' => 350.00,
-            'img_url' => 'https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiQkpb2j7SJAxVkp4MHHTfmKIAYABAHGgJlZg&ae=2&aspm=1&co=1&ase=2&gclid=Cj0KCQjwj4K5BhDYARIsAD1Ly2ptl0WLAnnzdCRqJ8s2WTlgdJpfwY8yDFlCT746cCgBf8gYQgMBChYaAq9qEALw_wcB&ohost=www.google.com&cid=CAESVuD2_rzLqEYIISW3BXfvGxCBSivwzYGiZEhAp2VfvYUn4KXWEUeCCS9YpHTEvKwBxZeey9bsDobDdvdkWbnk9hVZ4_YG_AvRIuKPcJqZa8p91LPyRyW0&sig=AOD64_1GAZB9zvJKOQSfoR_ZlaF1jyFpdg&ctype=5&q=&nis=4&ved=2ahUKEwjHnY72j7SJAxXWgf0HHTr2LdMQwg8oAXoECAgQCQ&adurl=',
+            'img_url' => 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSn4JceqM432syFQIUhpoOzknvU5Ev6FvC9hS_fkmsI98SiWCgGR1QDMwob89HNSgz8eu6xdO-aNkX5DLVVc9tgE43SOKYVPMAimkim-GMyibYbb1aG4LQ-j9Lan2nqnRfvgz1hYmGmnf0&usqp=CAc',
         ]);
 
         Sneaker::create([
@@ -90,7 +90,7 @@ class SneakerSeeder extends Seeder
             'year_release' => 2021,
             'retail_price' => 130.00,
             'actual_price' => 295.00,
-            'img_url' => 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRN151E7b6xngpdMifbzNULYaRywfJmiFnStt3mNJJicJoFkOiiRI1UDJNlLEddODwp_6ZCe9bikTsn4tOrIf-kcgBdky2cyQS3Ybn5_VKIyOxvIU_1gqUP1w',
+            'img_url' => 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTVFPi1ktIO9uvM5WSAfah8AFL-p9bbb_7lp_6KcNSqN4agBhpBrb5OFUrzd6Q5O2ZLFTkwL9YUlKkdwFbGS5oBvPVvwVpjnxv69tS1r1UjAccrC8mPykHDDaHnIQotyv7bDVZTxoG5oXQ&usqp=CAc',
         ]);
 
         Sneaker::create([
