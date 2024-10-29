@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Sneaker;
 use Illuminate\Http\Request;
 
 class SneakerController extends Controller
@@ -11,7 +12,9 @@ class SneakerController extends Controller
      */
     public function index()
     {
-        return view('sneakers.index');
+        $sneakers = Sneaker::all();
+        // dd($sneakers);
+        return view('sneakers.index', compact("sneakers"));
     }
 
     /**
