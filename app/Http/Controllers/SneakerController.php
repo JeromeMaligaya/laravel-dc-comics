@@ -38,7 +38,8 @@ class SneakerController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $sneaker = Sneaker::findOrFail($id);
+        return view('sneakers.show', compact("sneaker"));
     }
 
     /**
