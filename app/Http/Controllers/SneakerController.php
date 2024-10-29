@@ -30,7 +30,11 @@ class SneakerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $formData = $request->all();
+
+        $sneaker = Sneaker::create($formData);
+
+        return redirect()->route("sneaker-show", ["id" => $sneaker->id]);
     }
 
     /**
