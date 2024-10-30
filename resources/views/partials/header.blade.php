@@ -1,5 +1,16 @@
 <div class="container">
-    <header>
-        <h1 class="text-center">DB-SNEAKERS</h1>
+    <header class="d-flex justify-content-between align-items-center">
+        <h1 class="">DB-SNEAKERS</h1>
+        <nav>
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                  <a class="nav-link {{ (Route::currentRouteName() == 'sneaker-index' ? 'active' : '') }}" href="{{ route('sneaker-index') }}">Index</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ (Route::currentRouteName() == 'sneaker-create' ? 'active' : '') }}" href="{{ route('sneaker-create') }}">Create</a>
+                </li>
+              </ul>
+        </nav>
+
     </header>
 </div>
