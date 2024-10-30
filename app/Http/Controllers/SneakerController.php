@@ -60,7 +60,13 @@ class SneakerController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $formData = $request->all();
+
+        $sneaker = Sneaker::findOrFail($id);
+
+        $sneaker->update($formData);
+
+        return redirect()->route("sneaker-show", ["id" => $sneaker->id]);
     }
 
     /**
