@@ -1,6 +1,8 @@
 <div class="container">
-    <header class="d-flex justify-content-between align-items-center">
-        <h1 class="">DB-SNEAKERS</h1>
+    <header class="d-flex justify-content-between align-items-center py-3">
+        <a href="{{ route('sneaker-index') }}">
+            <h1 class="">DB-SNEAKERS</h1>
+        </a>
         <nav>
             <ul class="nav nav-underline">
                 <li class="nav-item">
