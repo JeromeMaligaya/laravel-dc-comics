@@ -20,4 +20,4 @@ Route::get('/sneakers/{id}', [SneakerController::class, "show"])->name("sneaker-
 Route::post('/sneakers', [SneakerController::class, "store"])->name("sneaker-store");
 Route::get('/sneakers/{id}/edit', [SneakerController::class, "edit"])->name("sneaker-edit");
 Route::put('/sneakers/{id}', [SneakerController::class, "update"])->name("sneaker-update");
-Route::delete('sneakers/{id}', [SneakerController::class, "destroy"])->name("sneaker-destroy");
+Route::delete('sneakers/{id}', [SneakerController::class, "destroy"])->name("sneaker-delete");
