@@ -74,6 +74,8 @@ class SneakerController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $sneaker = Sneaker::findOrFail($id);
+        $sneaker->delete();
+        return redirect()->route("sneaker-index");
     }
 }
