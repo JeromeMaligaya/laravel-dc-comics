@@ -15,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/sneakers', [SneakerController::class, "index"])->name("sneaker-index");
+Route::get('/sneakers/deleted', [SneakerController::class, "deletedIndex"])->name("sneaker-deleted-index");
 Route::get('/sneakers/create', [SneakerController::class, "create"])->name("sneaker-create");
 Route::get('/sneakers/{id}', [SneakerController::class, "show"])->name("sneaker-show");
 Route::post('/sneakers', [SneakerController::class, "store"])->name("sneaker-store");
 Route::get('/sneakers/{id}/edit', [SneakerController::class, "edit"])->name("sneaker-edit");
 Route::put('/sneakers/{id}', [SneakerController::class, "update"])->name("sneaker-update");
 Route::delete('sneakers/{id}', [SneakerController::class, "destroy"])->name("sneaker-delete");
+Route::patch('/sneakers/{id}/restore', [SneakerController::class, "restore"])->name("sneaker-restore");
