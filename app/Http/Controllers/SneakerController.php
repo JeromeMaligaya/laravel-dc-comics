@@ -78,4 +78,17 @@ class SneakerController extends Controller
         $sneaker->delete();
         return redirect()->route("sneaker-index");
     }
+
+    public function deletedIndex()
+    {
+        $sneakers = Sneaker::onlyTrashed()->get();
+        return view("sneakers.deleted-index", compact("sneakers"));
+    }
+
+    public function restore(string $id)
+    {
+        $sneaker = Sneaker::onlyTrashed()->findOrFail($id);
+        $sneaker->restore();
+        return redirect()->route("sneaker-index");
+    }
 }
