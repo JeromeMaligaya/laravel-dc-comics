@@ -11,6 +11,9 @@
                 <li class="nav-item">
                     <a class="nav-link {{ (Route::currentRouteName() == 'sneaker-create' ? 'active' : '') }}" href="{{ route('sneaker-create') }}">Create</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ (Route::currentRouteName() == 'sneaker-create' ? 'active' : '') }}" href="{{ route('sneaker-deleted-index') }}">Bin</a>
+                </li>
               </ul>
         </nav>
 
