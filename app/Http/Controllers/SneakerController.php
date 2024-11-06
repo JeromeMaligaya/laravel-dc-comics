@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreSneakerRequest;
 use App\Models\Sneaker;
 use Illuminate\Http\Request;
 
@@ -28,9 +29,9 @@ class SneakerController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreSneakerRequest $request)
     {
-        $formData = $request->all();
+        $formData = $request->validated();
 
         $sneaker = Sneaker::create($formData);
 
