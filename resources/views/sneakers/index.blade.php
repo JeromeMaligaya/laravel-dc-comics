@@ -40,7 +40,7 @@
                     <div class="d-flex justify-content-center mt-1">
                         <a href="{{ route('sneaker-edit', ['id' => $sneaker->id]) }}" class="btn btn-warning w-100">Edit</a>
                     </div>
-                    <form action="{{ route("sneaker-delete", ["id" => $sneaker->id])}}" method="POST" class="w-100 mt-1 mb-5 sneaker-form-delete" data-custom-name="{{ $sneaker->brand }} {{ $sneaker->model }} - {{ $sneaker->colorway }}">
+                    <form action="{{ route("sneaker-delete", ["id" => $sneaker->id])}}" method="POST" class="w-100 mt-1 mb-5" >
                         @method('DELETE')
                         @csrf
                         <button type="submit" class="btn btn-danger w-100">Delete</button>
