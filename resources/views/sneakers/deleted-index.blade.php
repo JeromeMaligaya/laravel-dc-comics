@@ -43,7 +43,7 @@
                     </form>
                 </li>
                 @empty
-                <h1>There are not sneakers in your bin! </h1>
+                <h1 class="text-center text-bg-danger my-3 p-2 rounded-4">There are not sneakers in your bin! </h1>
                 @endforelse
             </ul>
         </div>
